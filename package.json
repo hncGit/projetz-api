@@ -1,0 +1,30 @@
+{
+  "name": "projetz-api",
+  "version": "1.0.0",
+  "description": "server side of ozone mobile app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hncGit/projetz-api.git"
+  },
+  "keywords": [
+    "ozone",
+    "api"
+  ],
+  "author": "G_T_Y",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hncGit/projetz-api/issues"
+  },
+  "homepage": "https://github.com/hncGit/projetz-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.2",
+    "mongoose": "^5.0.4",
+    "nodemon": "^1.14.12"
+  }
+}
