@@ -3,7 +3,7 @@ let morgan = require("morgan");
 let favicon = require("serve-favicon");
 let bodyParser = require('body-parser');
 let db = require('./database');
-let port = process.env.PORT || 8080 ;
+let config = require('./config');
 
 let app = express();
 
@@ -15,6 +15,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 
-app.listen(port);
+app.listen(config.port);
 
-console.log('Ozone Service started on: ' + port);
+console.log('Ozone Service started on: ' + config.port);
