@@ -2,12 +2,13 @@ let mongoose = require('mongoose');
 let Schema = mongoose.Schema ;
 
 let forfaitSchema = new Schema({
-    nom : string,
-    nbJours : number,
-    codeUSSD : string,
-    nbOctets : number,
+    nom : String,
+    operateur : String,
+    nbJours : Number,
+    codeUSSD : String,
+    nbOctets : Number,
     type_forfait : {
-        type : string,
+        type : String,
         enum : ['standard', 'gigadata', 'night', 'nigth_day']
     }
 });

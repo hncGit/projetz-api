@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // parse application/json 
 app.use(bodyParser.json())
 
+let api = require('./routes/api');
+api(app);
 
 app.listen(config.port);
 
